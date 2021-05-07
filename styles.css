@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+main{
+    max-width: 500px;
+    margin: auto;
+    padding-top: 50px;
+    height: 50vh;
+    width: 70vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.left-box{
+    grid-column-start: 1;
+    
+}
+.top-box{
+    background-color: aqua;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.left-box{
+    background-color: aquamarine;
+}
+.right-box{
+    background-color: blueviolet;
+}
+footer{
+    background-color: pink;
+    width: 70vh;
+    max-width: 500px;
+    margin: auto;
+}
