@@ -2,37 +2,65 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
+}
+body{
+    background-color: hsl(204, 43%, 93%);
+    padding: 100px;
+
+    
 }
 main{
-    max-width: 500px;
+    width: 500px;
     margin: auto;
-    padding-top: 50px;
     height: 50vh;
     width: 70vh;
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-    
+    box-shadow: 5px 5px 5px 5px hsl(218, 22%, 67%);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px ;
+    border-top-right-radius: 5px ;
 }
 
-.left-box{
-    grid-column-start: 1;
     
-}
+
 .top-box{
-    background-color: aqua;
+    height: 20vh;
+    background-color:white;
     grid-column-start: 1;
     grid-column-end: 3;
+    border-top-left-radius: 5px ;
+    border-top-right-radius: 5px ;
+    padding: 25px;
+    line-height: 1.5;
+}
+.join{
+    color: hsl(179, 62%, 43%);
+    padding-bottom: 10px;
+}
+.green-text{
+    color: hsl(71, 73%, 54%);
+    
 }
 .left-box{
-    background-color: aquamarine;
+    height: 30vh;
+    grid-column-start: 1;
+    background-color: hsl(179, 62%, 43%);
+    border-bottom-left-radius: 5px;
+    color: white;
+    padding: 25px;
+    line-height: 1.5;
+}
+.dollars{
+    font-size: 25px;
+    font-weight: 700;
 }
 .right-box{
-    background-color: blueviolet;
+    background-color:hsl(179, 70%, 43%);
+    border-bottom-right-radius: 5px;
+    color: white;
 }
-footer{
-    background-color: pink;
-    width: 70vh;
-    max-width: 500px;
-    margin: auto;
-}
+
