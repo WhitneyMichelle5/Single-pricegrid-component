@@ -11,6 +11,7 @@ body{
     
 }
 main{
+    font-family: 'Karla', sans-serif;
     width: 500px;
     margin: auto;
     height: 50vh;
@@ -18,7 +19,7 @@ main{
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-    box-shadow: 5px 5px 5px 5px hsl(218, 22%, 67%);
+    box-shadow: 5px 5px 5px 5px lightgrey;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     border-top-left-radius: 5px ;
@@ -40,10 +41,14 @@ main{
 .join{
     color: hsl(179, 62%, 43%);
     padding-bottom: 10px;
+    font-size: 20px;
 }
 .green-text{
     color: hsl(71, 73%, 54%);
     
+}
+.grey-text{
+    color: hsl(218, 22%, 67%);
 }
 .left-box{
     height: 30vh;
@@ -58,9 +63,52 @@ main{
     font-size: 25px;
     font-weight: 700;
 }
+button{
+     color: white;
+     background: hsl(71, 73%, 54%);
+     border: none;
+     padding: 10px;
+     margin-top: 15px;
+     width: 100%;
+     border-radius: 5px;
+     box-shadow: 5px 5px 5px hsl(179, 70%, 43%);
+}
+
 .right-box{
     background-color:hsl(179, 70%, 43%);
     border-bottom-right-radius: 5px;
     color: white;
+    padding: 25px;
+    line-height: 1.5;
 }
+.why-us{
+    padding-bottom: 10px;
+    font-weight: 600;
+    font-size: 20px;
+}
+@media screen and (max-width: 750px) {
+  
+    main {
+      height: 800px;
+      width: 300px;
+      display: grid;
+      grid-template-columns: 100%;
+      
+    }
+    .top-box{
+        height: 100%;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    .left-box{
+        border-radius: 0%;
+        height: 100%;
+        padding: 10% ;
+    }
+    
+    .right-box{
+        border-bottom-left-radius: 5px;
+        height: 300px;
+    }
+  }
 
