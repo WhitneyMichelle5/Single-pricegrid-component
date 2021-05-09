@@ -86,6 +86,9 @@ button{
     font-weight: 600;
     font-size: 20px;
 }
+footer{
+    position: relative;
+}
 @media screen and (max-width: 750px) {
   
     main {
@@ -93,8 +96,12 @@ button{
       width: 300px;
       display: grid;
       grid-template-columns: 100%;
+      align-self: stretch;
       
     }
+     body{ 
+         margin-right: auto;
+     }
     .top-box{
         height: 100%;
         grid-column-start: 1;
@@ -110,5 +117,6 @@ button{
         border-bottom-left-radius: 5px;
         height: 300px;
     }
+
   }
 
